@@ -7,7 +7,7 @@
 body{
 
     font-family: Arial, Helvetica, sans-serif;
-    background:#f4f4f4;
+    background: linear-gradient(135deg, #c72828, #7a1414);
 
     display:flex;
     justify-content:center;
@@ -19,14 +19,14 @@ body{
 
 .calculadora{
 
-    background:white;
+    background:rgb(104, 11, 11);
     padding:30px;
 
     width:350px;
 
-    border-radius:10px;
+    border-radius:14px;
 
-    box-shadow:0px 0px 10px rgba(0,0,0,.2);
+    box-shadow:0px 6px 18px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -34,6 +34,7 @@ h1{
 
     text-align:center;
     margin-bottom:20px;
+    color:#fff;
 
 }
 
@@ -41,6 +42,7 @@ label{
 
     display:block;
     margin-top:15px;
+    color:#f2d5d5;
 
 }
 
@@ -49,7 +51,14 @@ input{
     width:100%;
     padding:10px;
     margin-top:5px;
+    border:none;
+    border-radius:6px;
+    outline:none;
 
+}
+
+input:focus{
+    box-shadow:0 0 0 2px #ffb3b3;
 }
 
 .botoes{
@@ -61,18 +70,44 @@ input{
 
 }
 
+.botoes-extra{
+    margin-top:10px;
+}
+
 button{
 
     width:48%;
     padding:10px;
 
-    cursor:pointer;
+    border:none;
+    border-radius:6px;
+    background:#f2f2f2;
 
+    cursor:pointer;
+    transition: transform 0.15s, background 0.15s;
+
+}
+
+button:hover{
+    background:#ffffff;
+    transform: translateY(-2px);
+}
+
+.botoes-extra button{
+    width:31%;
+    background:#e0a800;
+    color:#2b0000;
+    font-weight:bold;
+}
+
+.botoes-extra button:hover{
+    background:#ffc107;
 }
 
 #resultado{
 
     margin-top:25px;
     text-align:center;
+    color:#fff;
 
 }
